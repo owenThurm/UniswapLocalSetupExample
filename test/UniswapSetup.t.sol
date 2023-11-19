@@ -8,8 +8,7 @@ import {IUniswapV3Pool} from "./interfaces/IUniswapV3Pool.sol";
 import {IUniswapV3Factory} from "./interfaces/IUniswapV3Factory.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-
-import "forge-std/Test.sol"; 
+import "forge-std/Test.sol";
 
 contract UniswapSetup is Test {
 
@@ -152,7 +151,7 @@ contract UniswapSetup is Test {
             recipient: bob,
             deadline: block.timestamp,
             amountIn: 10 * 1e18,
-            amountOutMinimum: 45 * 1e13 // depends on current price of ETH, should get roughly 1/2,000 = 0.0005 ETH at current prices
+            amountOutMinimum: 49 * 1e13 // depends on current price of ETH, should get roughly 1/2,000 = 0.0005 ETH at current prices
         });
 
         // Perform swap
